@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounce-left {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-30px);
+    }
+  }
+  
+  @keyframes bounce-right {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+  }
+  
+  .animate-bounce-left {
+    animation: bounce-left 1.5s infinite;
+  }
+  
+  .animate-bounce-right {
+    animation: bounce-right 1.5s infinite;
+  }
+  
